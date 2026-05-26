@@ -174,7 +174,7 @@ function getPaginatedUsers(users) {
 
 async function getUsers() {
 
-    const response = await fetch("https://randomuser.me/api/?results=10");
+    const response = await fetch("https://randomuser.me/api/?results=30");
 
     const data = await response.json();
 
@@ -284,8 +284,6 @@ function loadFromURL() {
 
 async function init() {
 await Promise.all([
-        getUsers(),
-        getUsers(),
         getUsers()
     ]);
     loadFromURL();
