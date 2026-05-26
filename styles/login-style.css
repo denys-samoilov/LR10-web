@@ -1,0 +1,174 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    margin: 0;
+}
+
+form{
+    background-color: white;
+
+    padding: 30px;
+    border-radius: 12px;
+
+    width: 400px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h4{
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.loginInput,
+select{
+    width: 100%;
+
+    padding: 10px;
+    box-sizing: border-box;
+
+    border: 2px solid black;
+    border-radius: 6px;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+
+    background-color: white;
+}
+
+input:focus,
+select:focus{
+    outline: none;
+    border-color: #4a90e2;
+}
+
+.valid{
+    border-color: green;
+}
+
+.error{
+    border-color: red;
+}
+
+p{
+    margin: 5px 0 0;
+    font-size: 13px;
+    min-height: 15px;
+}
+
+.submit-btn{
+    margin-top: 20px;
+
+    width: 100%;
+    padding: 12px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #4a90e2;
+    color: white;
+
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.submit-btn:hover{
+    background-color: #357abd;
+}
+
+.show-pass{
+    margin-top: 8px;
+    margin-bottom: 5px;
+
+    width: auto;
+    padding: 6px 10px;
+
+    font-size: 12px;
+}
+
+
+.password-container{
+    position: relative;
+    width: 100%;
+}
+
+
+.toggle-password{
+    position: absolute;
+
+    right: 15px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    cursor: pointer;
+    user-select: none;
+
+    font-size: 18px;
+}
+
+.toggle-password img{
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    padding-top: 4px;
+}
+
+.error-message{
+    color: red;
+    font-size: 13px;
+    min-height: 15px;
+    margin-top: 5px;
+}
+
+.tabs{
+    display: flex;
+
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.checkbox-container{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px){
+
+    form{
+        width: 90%;
+        padding: 25px;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    h4{
+        font-size: 14px;
+    }
+
+    input,
+    select,
+    button{
+        font-size: 14px;
+    }
+}

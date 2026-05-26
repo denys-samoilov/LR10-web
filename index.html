@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LR10</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/login-style.css">
+</head>
+<body>
+
+    <div id="loginContainer">
+        <form name="loginForm">
+        <h1>Login Form</h1>
+
+        <h4>Email</h4>
+        <input type="text" placeholder="Email" name="emailInput" class="loginInput" required>
+        <label id="emailError" class="error-message"></label>
+        <p></p>
+
+        <h4>Password</h4>
+            <div class="password-container">
+                <input
+                    type="password"
+                    placeholder="Password"
+                    name="passwordInput"
+                    class="loginInput"
+                    required
+                >
+
+                <span class="toggle-password"
+                      id="togglePassword">
+                    <img id = "passwordImage" src="images/closed eye.jpg">
+                </span>
+            </div>
+        <label id="passwordError" class="error-message"></label>
+
+        <p></p>
+
+        <div class="checkbox-container">
+            <input type="checkbox" id="rememberMe" name="rememberMe">
+            <label for="rememberMe">Remember Me</label>
+        </div>
+
+        <button name="submitButton" type="submit" class="submit-btn">Login</button>
+    </form>
+    </div>
+
+
+    <div id="appContainer" hidden>
+
+    <button id="logOut">Вийти</button>
+
+    <div class="controls">
+
+        <div class="panel sorting">
+            <h3>Sorting</h3>
+            <button id="sortByName">Сортувати за ім'ям</button>
+            <button id="sortByAge">Сортувати за віком</button>
+            <button id="sortByRegistrationDate">Сортувати за датою</button>
+            <button id="discard">Скинути</button>
+        </div>
+
+        <div class="panel filtering">
+            <h3>Filtering</h3>
+
+            <input type="text" id="findByName" placeholder="Фільтр за ім'ям...">
+            <input type="text" id="findByAgeFrom" placeholder="Вік від...">
+            <input type="text" id="findByAgeTo" placeholder="Вік до...">
+            <input type="text" id="findByCountry" placeholder="Країна...">
+        </div>
+
+    </div>
+
+    <div class="container"></div>
+
+    <div class="pagination">
+        <button id="prevPage">Prev</button>
+        <span id="pageInfo">1</span>
+        <button id="nextPage">Next</button>
+    </div>
+
+</div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/login-script.js"></script>
+</body>
+</html>

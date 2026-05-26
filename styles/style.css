@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+
+    grid-template-columns: repeat(5, 300px);
+
+    gap: 20px;
+
+    justify-content: center;
+}
+
+.card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    text-align: center;
+
+    width: 300px;
+
+    box-sizing: border-box;
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+.controls {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.panel {
+    background: white;
+    padding: 50px;
+    border-radius: 16px;
+    width: 320px;
+
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.panel h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.panel button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+
+    background: #4a6cf7;
+    color: white;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.panel button:hover {
+    background: #3a57d0;
+}
+
+.panel input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+    border: 1px solid #ddd;
+
+    outline: none;
+}
+
+.panel input:focus {
+    border-color: #4a6cf7;
+}
+
+@media screen and (max-width: 1500px) {
+  .container {
+    grid-template-columns: repeat(2, 300px);
+  }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    margin-top: 30px;
+    padding: 15px;
+}
+
+.favorite-btn
+{
+    margin-top: 15px;
+    padding: 8px 12px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #4a6cf7;
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.pagination
+button {
+    padding: 10px 16px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #4a6cf7;
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+#pageInfo {
+    min-width: 40px;
+    text-align: center;
+
+    padding: 8px 12px;
+    border-radius: 10px;
+
+
+    font-weight: bold;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
